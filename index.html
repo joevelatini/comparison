@@ -134,13 +134,6 @@
             font-weight: 500;
         }
         
-        .agreement-term {
-            font-size: 14px;
-            color: #4b5563;
-            font-weight: 600;
-            margin-top: 4px;
-        }
-        
         .section {
             margin-bottom: 20px;
         }
@@ -159,10 +152,10 @@
         }
         
         .feature-list li {
-            padding: 6px 0;
+            padding: 5px 0;
             padding-left: 24px;
             position: relative;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 1.4;
             color: #374151;
         }
@@ -208,11 +201,24 @@
         .support-section {
             background: #f8f9fa;
             border-radius: 6px;
-            padding: 15px;
+            padding: 12px;
         }
         
         .support-section .section-title {
             margin-bottom: 10px;
+        }
+        
+        .signature-section {
+            background: #e8f5e9;
+            border-radius: 6px;
+            padding: 12px;
+        }
+        
+        .activconnect-section {
+            background: #f3e8ff;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 10px;
         }
         
         @media print {
@@ -271,6 +277,18 @@
                 print-color-adjust: exact;
             }
             
+            .signature-section {
+                background: #e8f5e9 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .activconnect-section {
+                background: #f3e8ff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
             .comparison-wrapper {
                 page-break-inside: avoid;
             }
@@ -281,6 +299,7 @@
             
             .feature-list li {
                 page-break-inside: avoid;
+                font-size: 11px;
             }
         }
     </style>
@@ -304,23 +323,22 @@
                 <div class="column-header">
                     <span class="offering-type">CURRENT OFFERING</span>
                     <h2>Direct from ActivTrak</h2>
-                    <div class="subscription-type">Premium Annual Subscription</div>
-                    <div class="agreement-term">36 Month Agreement</div>
                 </div>
                 
                 <div class="section">
-                    <div class="section-title">License Details</div>
+                    <div class="section-title">ActivTrak Premium</div>
                     <ul class="feature-list">
+                        <li>Premium Annual Subscription</li>
                         <li>Annual subscription license</li>
-                        <li>Digital Support included</li>
+                        <li>Digital Support Included</li>
                         <li>12 Months of Data History Included</li>
                     </ul>
                 </div>
                 
                 <div class="section">
-                    <div class="section-title">Data Retention</div>
+                    <div class="section-title">36 Months Data</div>
                     <div class="data-history">
-                        <strong>36 Months Data History</strong><br>
+                        <strong>36 Month Data History</strong><br>
                         Rolling 36 month window of data history
                     </div>
                 </div>
@@ -328,43 +346,58 @@
             
             <div class="column paragon">
                 <div class="column-header">
-                    <span class="offering-type">NEW OFFERING</span>
+                    <span class="offering-type">PARAGON OFFERING</span>
                     <h2>Through Paragon</h2>
-                    <div class="subscription-type">Premium Annual Subscription</div>
-                    <div class="agreement-term">36 Month Agreement</div>
                 </div>
                 
                 <div class="section">
-                    <div class="section-title">License Details</div>
+                    <div class="section-title">ActivTrak Premium</div>
                     <ul class="feature-list">
+                        <li>Premium Annual Subscription</li>
                         <li>Annual subscription license</li>
-                        <li>Digital Support included</li>
+                        <li>Digital Support Included</li>
                         <li>12 Months of Data History Included</li>
                     </ul>
                 </div>
                 
                 <div class="section">
-                    <div class="section-title">Data Retention</div>
+                    <div class="section-title">36 Months Data</div>
                     <div class="data-history">
-                        <strong>36 Months Data History</strong><br>
+                        <strong>36 Month Data History</strong><br>
                         Rolling 36 month window of data history
                     </div>
                 </div>
                 
-                <div class="section support-section">
-                    <div class="section-title">Premier Support Package</div>
+                <div class="section signature-section">
+                    <div class="section-title">Signature Support</div>
                     <ul class="feature-list">
-                        <li>Premier Support Annual Subscription</li>
+                        <li>Signature Support Annual Subscription</li>
                         <li>Adoption Assurance</li>
                         <li>24/7 Access to ActivTrak Help Center</li>
                         <li>24/7 Access to ActivTrak Academy</li>
+                        <li>24/7 Live Chat & Email Support</li>
                         <li>Technical Account Configuration & Setup</li>
-                        <li>Triage Based Ticket Routing</li>
+                        <li>Priority Ticket Routing</li>
                         <li>Business Reviews</li>
                         <li>Training Vouchers</li>
+                        <li>Technical Account Manager (TAM)</li>
                         <li>Customer Success Manager (CSM)</li>
-                        <li>Productivity Sherpa Sessions</li>
+                        <li>Productivity Assessments</li>
+                        <li>Insights-to-Action Workshop</li>
                         <li>Annual Technical Health Check</li>
+                        <li>Customization support for ActivConnect Pre-built starter templates* (Up to 10 hours)</li>
+                        <li>*does not include support for third party data integration</li>
+                    </ul>
+                </div>
+                
+                <div class="section activconnect-section">
+                    <div class="section-title">ActivConnect</div>
+                    <ul class="feature-list">
+                        <li>API connectors and tools</li>
+                        <li>Access to your ActivTrak data in hundreds of external applications</li>
+                        <li>Cloud-based SQL query interface</li>
+                        <li>API compatibility with business and analytic software</li>
+                        <li>BI starter templates for Microsoft Power BI, Tableau, Google Looker Studio, and more</li>
                     </ul>
                 </div>
             </div>

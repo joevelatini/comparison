@@ -18,6 +18,30 @@
             color: #1a1a1a;
         }
         
+        .download-button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .download-pdf-btn {
+            background-color: #5B4CFF;
+            color: white;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .download-pdf-btn:hover {
+            background-color: #4a3ff0;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -108,6 +132,13 @@
             font-size: 18px;
             color: #6b7280;
             font-weight: 500;
+        }
+        
+        .agreement-term {
+            font-size: 16px;
+            color: #4b5563;
+            font-weight: 600;
+            margin-top: 6px;
         }
         
         .section {
@@ -215,13 +246,13 @@
                 background: white;
             }
             
+            .download-button-container {
+                display: none;
+            }
+            
             .container {
                 box-shadow: none;
                 max-width: 100%;
-            }
-            
-            .header button {
-                display: none;
             }
             
             .comparison-wrapper {
@@ -239,6 +270,12 @@
     </style>
 </head>
 <body>
+    <div class="download-button-container">
+        <button class="download-pdf-btn" onclick="window.print()">
+            📥 Download as PDF
+        </button>
+    </div>
+    
     <div class="container">
         <div class="header">
             <div class="logo-placeholder">ActivTrak</div>
@@ -252,6 +289,7 @@
                     <span class="offering-type">CURRENT OFFERING</span>
                     <h2>Direct from ActivTrak</h2>
                     <div class="subscription-type">Premium Annual Subscription</div>
+                    <div class="agreement-term">36 Month Agreement</div>
                 </div>
                 
                 <div class="section">
@@ -277,6 +315,7 @@
                     <span class="offering-type">NEW OFFERING</span>
                     <h2>Through Paragon</h2>
                     <div class="subscription-type">Premium Annual Subscription</div>
+                    <div class="agreement-term">36 Month Agreement</div>
                 </div>
                 
                 <div class="section">
